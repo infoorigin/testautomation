@@ -1,0 +1,171 @@
+{
+  "config": {
+    "configFile": "C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\playwright.config.ts",
+    "rootDir": "C:/sb/dev/testautomation/test-automation/test-automation-ts/.features-gen",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/sb/dev/testautomation/test-automation/test-automation-ts/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "C:/sb/dev/testautomation/test-automation/test-automation-ts/.features-gen",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.40.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "features\\Sample Page Test Screen - Form page - click Submit Button User Action.feature.spec.js",
+      "file": "features/Sample Page Test Screen - Form page - click Submit Button User Action.feature.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Sample Page Test Screen - Form page - click Submit Button User Action;Description:",
+          "file": "features/Sample Page Test Screen - Form page - click Submit Button User Action.feature.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "8~RQ - Valid email is required. COS - If User enters invalid 'Email' , display message 'Email requires a valid email address' in 'ERROR!' field~",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 0,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 102468,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('#contact-form-2599 > div > ul > li')\nExpected string: \u001b[32m\"Email requires a valid email address\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#contact-form-2599 > div > ul > li')\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('#contact-form-2599 > div > ul > li')\nExpected string: \u001b[32m\"Email requires a valid email address\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#contact-form-2599 > div > ul > li')\u001b[22m\n\n    at asserElementValue (C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\src\\fixtures\\asserts.ts:11:32)\n    at PageWorld.<anonymous> (C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\src\\steps\\asserts.steps.ts:17:3)\n    at C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\.features-gen\\features\\Sample Page Test Screen - Form page - click Submit Button User Action.feature.spec.js:12:5",
+                        "location": {
+                          "file": "C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\src\\fixtures\\asserts.ts",
+                          "column": 32,
+                          "line": 11
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\fixtures\\asserts.ts:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mconst\u001b[39m pageElement \u001b[33m=\u001b[39m findPageElementElseThrowError(elemenName\u001b[33m,\u001b[39m world)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m   \u001b[36mconst\u001b[39m elementLocator \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m findLocatorElseThrowError(pageElement\u001b[33m,\u001b[39m world)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m expect(elementLocator)\u001b[33m.\u001b[39mtoHaveText(assertValue)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mconst\u001b[39m assertElementState \u001b[33m=\u001b[39m \u001b[36masync\u001b[39m (elementName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m elementState\u001b[33m:\u001b[39m \u001b[33mPageElementState\u001b[39m\u001b[33m,\u001b[39m world\u001b[33m:\u001b[39m \u001b[33mPageWorld\u001b[39m) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\src\\fixtures\\asserts.ts",
+                            "column": 32,
+                            "line": 11
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('#contact-form-2599 > div > ul > li')\nExpected string: \u001b[32m\"Email requires a valid email address\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#contact-form-2599 > div > ul > li')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\src\\fixtures\\asserts.ts:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mconst\u001b[39m pageElement \u001b[33m=\u001b[39m findPageElementElseThrowError(elemenName\u001b[33m,\u001b[39m world)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m   \u001b[36mconst\u001b[39m elementLocator \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m findLocatorElseThrowError(pageElement\u001b[33m,\u001b[39m world)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m expect(elementLocator)\u001b[33m.\u001b[39mtoHaveText(assertValue)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mconst\u001b[39m assertElementState \u001b[33m=\u001b[39m \u001b[36masync\u001b[39m (elementName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m elementState\u001b[33m:\u001b[39m \u001b[33mPageElementState\u001b[39m\u001b[33m,\u001b[39m world\u001b[33m:\u001b[39m \u001b[33mPageWorld\u001b[39m) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at asserElementValue (C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\src\\fixtures\\asserts.ts:11:32)\u001b[22m\n\u001b[2m    at PageWorld.<anonymous> (C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\src\\steps\\asserts.steps.ts:17:3)\u001b[22m\n\u001b[2m    at C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\.features-gen\\features\\Sample Page Test Screen - Form page - click Submit Button User Action.feature.spec.js:12:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Given User is on 'SAMPLE PAGE TEST' Page",
+                          "duration": 21205
+                        },
+                        {
+                          "title": "When User checks 'Expertise' as 'Functional Testing'",
+                          "duration": 18932
+                        },
+                        {
+                          "title": "When User checks 'Education' as 'Graduate'",
+                          "duration": 46796
+                        },
+                        {
+                          "title": "When User enters 'Email' as 'ram@gmail'",
+                          "duration": 547
+                        },
+                        {
+                          "title": "When User 'clicks' on 'SUBMIT' 'Button'",
+                          "duration": 712
+                        },
+                        {
+                          "title": "Then System should display 'Email requires a valid email address' in 'ERROR! Message' field",
+                          "duration": 5258,
+                          "error": {
+                            "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('#contact-form-2599 > div > ul > li')\nExpected string: \u001b[32m\"Email requires a valid email address\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#contact-form-2599 > div > ul > li')\u001b[22m\n",
+                            "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('#contact-form-2599 > div > ul > li')\nExpected string: \u001b[32m\"Email requires a valid email address\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#contact-form-2599 > div > ul > li')\u001b[22m\n\n    at asserElementValue (C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\src\\fixtures\\asserts.ts:11:32)\n    at PageWorld.<anonymous> (C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\src\\steps\\asserts.steps.ts:17:3)\n    at C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\.features-gen\\features\\Sample Page Test Screen - Form page - click Submit Button User Action.feature.spec.js:12:5",
+                            "location": {
+                              "file": "C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\src\\fixtures\\asserts.ts",
+                              "column": 32,
+                              "line": 11
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\src\\fixtures\\asserts.ts:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   \u001b[36mconst\u001b[39m pageElement \u001b[33m=\u001b[39m findPageElementElseThrowError(elemenName\u001b[33m,\u001b[39m world)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m   \u001b[36mconst\u001b[39m elementLocator \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m findLocatorElseThrowError(pageElement\u001b[33m,\u001b[39m world)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m expect(elementLocator)\u001b[33m.\u001b[39mtoHaveText(assertValue)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mconst\u001b[39m assertElementState \u001b[33m=\u001b[39m \u001b[36masync\u001b[39m (elementName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m elementState\u001b[33m:\u001b[39m \u001b[33mPageElementState\u001b[39m\u001b[33m,\u001b[39m world\u001b[33m:\u001b[39m \u001b[33mPageWorld\u001b[39m) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2023-12-20T14:39:01.232Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "C:\\sb\\dev\\testautomation\\test-automation\\test-automation-ts\\src\\fixtures\\asserts.ts",
+                        "column": 32,
+                        "line": 11
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "fd8ac5b3ca0819474aaa-1bc4da286890ef24b590",
+              "file": "features/Sample Page Test Screen - Form page - click Submit Button User Action.feature.spec.js",
+              "line": 6,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2023-12-20T14:38:48.428Z",
+    "duration": 122900.895,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

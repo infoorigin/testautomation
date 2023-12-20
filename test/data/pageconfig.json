@@ -1,0 +1,238 @@
+[
+  {
+    "pageElements": [
+      {
+        "pageId": "1",
+        "elementId": "1",
+        "elementName": "Username",
+        "elementType": "textbox",
+        "locatorType": "selector",
+        "locatorValue": "#username"
+      },
+      {
+        "pageId": "1",
+        "elementId": "2",
+        "elementName": "Password",
+        "elementType": "textbox",
+        "locatorType": "selector",
+        "locatorValue": "#password"
+      },
+      {
+        "pageId": "1",
+        "elementId": "3",
+        "elementName": "Username message",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > div > form > div.form-group.has-error > span"
+      },
+      {
+        "pageId": "1",
+        "elementId": "4",
+        "elementName": "Password message",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > div > form > div:nth-child(2) > span"
+      },
+      {
+        "pageId": "1",
+        "elementId": "5",
+        "elementName": "Login Page Message",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div.ng-binding.ng-scope.alert.alert-success"
+      },
+      {
+        "pageId": "1",
+        "elementId": "6",
+        "elementName": "Login Page Header",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > div > h2:text(\"Login\")",
+        "isPageIdentifier": "Yes"
+      }
+    ],
+    "actionElements": [
+      {
+        "pageId": "1",
+        "elementId": "1",
+        "elementName": "Register",
+        "eventName": "click",
+        "elementType": "link",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > div > form > div.form-actions > a"
+      },
+      {
+        "pageId": "1",
+        "elementId": "2",
+        "elementName": "Login",
+        "eventName": "click",
+        "elementType": "button",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > div > form > div.form-actions > button"
+      }
+    ],
+    "pageId": "1",
+    "pageName": "Login",
+    "navigation": {
+      "navigationType": "URL",
+      "navigationValue": "https://globalsqa.com/angularJs-protractor/registration-login-example/#/login"
+    }
+  },
+  {
+    "pageElements": [
+      {
+        "pageId": "2",
+        "elementId": "1",
+        "elementName": "Register Header",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div.ng-binding.ng-scope.alert.alert-danger",
+        "isPageIdentifier": "Yes"
+      },
+      {
+        "pageId": "2",
+        "elementId": "2",
+        "elementName": "First name",
+        "elementType": "textbox",
+        "locatorType": "selector",
+        "locatorValue": "#firstName"
+      },
+      {
+        "pageId": "2",
+        "elementId": "3",
+        "elementName": "Last name",
+        "elementType": "textbox",
+        "locatorType": "selector",
+        "locatorValue": "#Text1"
+      },
+      {
+        "pageId": "2",
+        "elementId": "4",
+        "elementName": "Username",
+        "elementType": "textbox",
+        "locatorType": "selector",
+        "locatorValue": "#username"
+      },
+      {
+        "pageId": "2",
+        "elementId": "5",
+        "elementName": "Password",
+        "elementType": "textbox",
+        "locatorType": "selector",
+        "locatorValue": "#password"
+      },
+      {
+        "pageId": "2",
+        "elementId": "6",
+        "elementName": "Username message",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div:nth-child(2) > div > form > div.form-group.has-error > span"
+      },
+      {
+        "pageId": "2",
+        "elementId": "7",
+        "elementName": "Password message",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div:nth-child(2) > div > form > div:nth-child(4) > span"
+      },
+      {
+        "pageId": "2",
+        "elementId": "8",
+        "elementName": "First name message",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div:nth-child(2) > div > form > div:nth-child(1) > span"
+      },
+      {
+        "pageId": "2",
+        "elementId": "9",
+        "elementName": "Last name message",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div:nth-child(2) > div > form > div:nth-child(2) > span"
+      }
+    ],
+    "actionElements": [
+      {
+        "pageId": "2",
+        "elementId": "1",
+        "elementName": "Register",
+        "eventName": "click",
+        "elementType": "button",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > div > form > div.form-actions > button"
+      },
+      {
+        "pageId": "2",
+        "elementId": "2",
+        "elementName": "Cancel",
+        "eventName": "click",
+        "elementType": "link",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > div > form > div.form-actions > a"
+      }
+    ],
+    "pageId": "2",
+    "pageName": "Register",
+    "navigation": {
+      "navigationType": "URL",
+      "navigationValue": "https://globalsqa.com/angularJs-protractor/registration-login-example/#/register"
+    }
+  },
+  {
+    "pageElements": [
+      {
+        "pageId": "3",
+        "elementId": "1",
+        "elementName": "First name Header",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > h1"
+      },
+      {
+        "pageId": "3",
+        "elementId": "2",
+        "elementName": "Logged In Message",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > p:nth-child(2)",
+        "isPageIdentifier": "Yes"
+      },
+      {
+        "pageId": "3",
+        "elementId": "3",
+        "elementName": "User Detail",
+        "elementType": "outputtext",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > ul > li"
+      }
+    ],
+    "actionElements": [
+      {
+        "pageId": "3",
+        "elementId": "1",
+        "elementName": "Logout",
+        "eventName": "click",
+        "elementType": "button",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > p:nth-child(6) > a"
+      },
+      {
+        "pageId": "3",
+        "elementId": "2",
+        "elementName": "Delete",
+        "eventName": "click",
+        "elementType": "link",
+        "locatorType": "selector",
+        "locatorValue": "body > div.jumbotron > div > div > div > ul > li > a"
+      }
+    ],
+    "pageId": "3",
+    "pageName": "Home",
+    "navigation": {
+      "navigationType": "URL"
+    }
+  }
+]

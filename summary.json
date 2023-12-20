@@ -1,0 +1,12 @@
+{
+  "durationInMS": 8019,
+  "passed": [
+    "undefined:6:7"
+  ],
+  "skipped": [],
+  "failed": [],
+  "warned": [],
+  "timedOut": [],
+  "status": "passed",
+  "startedAt": 1700112399618
+}

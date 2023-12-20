@@ -1,0 +1,172 @@
+[
+    {
+        "entityType": "feature",
+        "sheetName": "Feature",
+        "columns": [
+            {
+                "position": 1,
+                "key": "id"
+            },
+            {
+                "position": 2,
+                "key": "name"
+            }
+        ]
+    },
+    {
+        "entityType": "scenario",
+        "sheetName": "Scenario",
+        "columns": [
+            {
+                "position": 1,
+                "key": "featureId"
+            },
+            {
+                "position": 2,
+                "key": "id"
+            },
+            {
+                "position": 3,
+                "key": "seqId"
+            },
+            {
+                "position": 4,
+                "key": "name"
+            }
+        ]
+    },
+    {
+        "entityType": "step",
+        "sheetName": "Scenario Step",
+        "columns": [
+            {
+                "position": 2,
+                "key": "scenarioId"
+            },
+            {
+                "position": 3,
+                "key": "id"
+            },
+            {
+                "position": 4,
+                "key": "seqId"
+            },
+            {
+                "position": 5,
+                "key": "name"
+            }
+        ]
+    },
+    {
+        "entityType": "stepdefinition",
+        "sheetName": "Step Definition",
+        "columns": [
+            {
+                "position": 3,
+                "key": "stepId"
+            },
+            {
+                "position": 4,
+                "key": "id"
+            },
+            {
+                "position": 5,
+                "key": "seqId"
+            },
+            {
+                "position": 6,
+                "key": "type"
+            },
+            {
+                "position": 7,
+                "key": "text"
+            }
+        ]
+    },
+    {
+        "entityType": "page",
+        "sheetName": "Page",
+        "columns": [
+            {
+                "position": 1,
+                "key": "pageId"
+            },
+            {
+                "position": 2,
+                "key": "pageName"
+            },
+            {
+                "position": 3,
+                "key": "url"
+            }
+        ]
+    },
+    {
+        "entityType": "pageElement",
+        "sheetName": "UI Element",
+        "columns": [
+            {
+                "position": 1,
+                "key": "pageId"
+            },
+            {
+                "position": 2,
+                "key": "elementId"
+            },
+            {
+                "position": 3,
+                "key": "elementName"
+            },
+            {
+                "position": 4,
+                "key": "elementType"
+            },
+            {
+                "position": 5,
+                "key": "locatorType"
+            },
+            {
+                "position": 6,
+                "key": "locatorValue"
+            },
+            {
+                "position": 7,
+                "key": "isPageIdentifier"
+            }
+        ]
+    },
+    {
+        "entityType": "actionElement",
+        "sheetName": "User Action",
+        "columns": [
+            {
+                "position": 1,
+                "key": "pageId"
+            },
+            {
+                "position": 2,
+                "key": "elementId"
+            },
+            {
+                "position": 3,
+                "key": "elementName"
+            },
+            {
+                "position": 4,
+                "key": "eventName"
+            },
+            {
+                "position": 5,
+                "key": "elementType"
+            },
+            {
+                "position": 6,
+                "key": "locatorType"
+            },
+            {
+                "position": 7,
+                "key": "locatorValue"
+            }
+        ]
+    }
+]
